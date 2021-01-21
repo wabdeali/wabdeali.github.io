@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.712e9bbb.chunk.css",
+    "main.js": "/static/js/main.6fc6ad9d.chunk.js",
+    "main.js.map": "/static/js/main.6fc6ad9d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.9fb1a803.js",
+    "runtime-main.js.map": "/static/js/runtime-main.9fb1a803.js.map",
+    "static/js/2.de10906d.chunk.js": "/static/js/2.de10906d.chunk.js",
+    "static/js/2.de10906d.chunk.js.map": "/static/js/2.de10906d.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.712e9bbb.chunk.css.map": "/static/css/main.712e9bbb.chunk.css.map",
+    "static/js/2.de10906d.chunk.js.LICENSE.txt": "/static/js/2.de10906d.chunk.js.LICENSE.txt",
+    "static/media/club88Screenshot.f9e9d563.png": "/static/media/club88Screenshot.f9e9d563.png",
+    "static/media/display_picture.b8691e13.png": "/static/media/display_picture.b8691e13.png",
+    "static/media/ekjanScreenshot.bc90b688.png": "/static/media/ekjanScreenshot.bc90b688.png",
+    "static/media/email-icon.7779728c.png": "/static/media/email-icon.7779728c.png",
+    "static/media/linkedin-icon.0099585d.png": "/static/media/linkedin-icon.0099585d.png",
+    "static/media/safinaScreenshot.aea81ee3.png": "/static/media/safinaScreenshot.aea81ee3.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9fb1a803.js",
+    "static/js/2.de10906d.chunk.js",
+    "static/css/main.712e9bbb.chunk.css",
+    "static/js/main.6fc6ad9d.chunk.js"
+  ]
+}
