@@ -1,0 +1,173 @@
+@import './variables';
+
+.projectsTitle {
+    font-size: 2.5em;
+    font-weight: bold;
+    letter-spacing: 0.01em;
+    color: $accent-color;
+    text-align: center;
+
+    &:after, &:before {
+        content: "";
+        display: inline-block;
+        position: relative;
+        height: 1px;
+        top: -10px;
+        background-color: $accent-color;
+        width: 15vw;
+        opacity: 0.7;
+    }
+}
+
+.projectsContainer {
+    padding: 80px 0px 100px 0px;
+}
+
+.projectContainer {
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 200px;
+
+    img {
+        width: 40%;
+        filter: brightness(90%);
+        filter: opacity(0.8);
+        transition: all 0.2s ease-in-out;
+    }
+
+    .projectInfo {
+        position: absolute;
+        right: 0;
+        top: 40%;
+        width: 65%;
+        background-color: $secondary-color;
+        padding: 20px 40px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 12px 0 rgba(0, 0, 0, 0.5), 0px 8px 16px 0 rgba(0, 0, 0, 0.3);
+
+        .projectInfoTitle {
+            font-size: 1.8em;
+            font-weight: 400;
+            margin-bottom: 15px;
+        }
+
+        .projectInfoBody {
+            font-size: 1.4em;
+            font-weight: 300;
+            color: $light-background;
+        }
+
+        .projectInfoButtons {
+            margin: 20px 0px;
+        }
+
+        .projectInfoButton {
+                background: none;
+                color: $accent-color;
+                height: 40px;
+                padding: 0px 15px;
+                margin-right: 15px;
+                margin-top: 10px;
+                cursor: pointer;
+                transition: all 0.15s ease-in;
+                display: inline-flex;
+                align-items: center;
+        
+                text-transform: uppercase;
+                text-decoration: none;
+                font-size: 1.2em;
+                font-weight: thin;
+                letter-spacing: 0.1em;
+        
+                border: 1px solid $accent-color;
+                border-radius: 8px;
+
+            &:hover {
+                background: $accent-color;
+                color: $primary-color;
+                border-color: $primary-color;
+                transform: scale(1.08);
+            }
+        }
+
+        hr {
+            color: $black;
+            margin-right: 20%;
+            margin: 20px 0;
+        }
+
+        .technologiesContainer {
+            margin: 5px 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .technology {
+            color: $light-background;
+            font-size: 1.1em;
+            margin-right: 15px;
+            margin-top: 5px;
+            opacity: 0.8;
+            text-transform: uppercase;
+        }
+
+    }
+
+    &:hover {
+        transform: scale(1.01);
+
+        img {
+            filter: opacity(1);
+        }
+    }
+
+}
+
+//MEDIA QUERIES
+@media screen and (max-width: 1356px) {
+
+    .projectContainer {
+        margin-bottom: 300px;
+    }
+
+    .projectsTitle {
+        &:after, &:before {
+            width: 5vw;
+        }
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .projectsTitle {
+        font-size: 1.6em;
+        &:after, &:before {
+            width: 0;
+        } 
+    }
+
+    .projectsContainer {
+        padding-bottom: 100px;
+    }
+
+    .projectContainer {
+        width: 100%;
+        font-size: 0.8em;
+
+        img {
+            width: 85%;
+        }
+
+        .projectInfo {
+            position: relative;
+            float: right;
+            top: -30px;
+            width: 80%;
+            padding: 20px 15px;
+
+            .projectInfoTitle {
+                padding-top: 10px;
+            }
+        }
+    }
+}
