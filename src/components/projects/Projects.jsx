@@ -26,7 +26,7 @@ function Projects() {
             title: 'Safina Newsletter',
             body: 'An archive of newsletters published by an organization that helps with analytics about all their readers.',
             img: safinaScreenshot,
-            websiteURL: 'https://safinanewsletter.netlify.app/',
+            websiteURL: 'https://blrjmt.com/www/safina/',
             technologies: ['React', 'Google Analytics', 'Sass']
         }
     ]

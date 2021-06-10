@@ -27,7 +27,7 @@
     .icon {
         width: 40px;
         padding: 10px 20px 0 0px;
-        transition: all 0.15s ease-in;
+        transition: ease-in-out 0.1s;
     }
     .icon:hover {
         transform: scale(1.05);
@@ -39,7 +39,7 @@
         height: 40px;
         padding: 0px 30px;
         cursor: pointer;
-        transition: all 0.15s ease-in;
+        transition: ease-in-out 0.1s;
         display: inline-flex;
         align-items: center;
 
@@ -89,7 +89,7 @@
             font-size: 1.15em;
         }
         span:hover {
-            transform: scale(1.05);
+            transform: scale(1.01);
         }
     }
 }

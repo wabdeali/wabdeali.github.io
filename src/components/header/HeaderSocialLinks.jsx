@@ -14,7 +14,7 @@ function HeaderSocialLinks() {
         >
             <a href="https://github.com/wabdeali/" target="_blank" rel="noreferrer"><img src={githubIcon} alt="github link" className={styles.icon} /></a>
             <a href="https://www.linkedin.com/in/abdealiwaseef/" target="_blank" rel="noreferrer"><img src={linkedinIcon} alt="linkedin link" className={styles.icon} /></a>
-            <a href="mailto:wabdeali@gmail.com" target="_blank" rel="noreferrer"><img src={emailIcon} alt="email link" className={styles.icon} /></a>
+            <a href="mailto:wabdeali@gmail.com"><img src={emailIcon} alt="email link" className={styles.icon} /></a>
             <a
                 className={styles.socialLinksButton}
                 href="https://drive.google.com/file/d/1N6mw3cSN44vskLBRbThRaqb5ptt7kZUc/view?usp=sharing"
