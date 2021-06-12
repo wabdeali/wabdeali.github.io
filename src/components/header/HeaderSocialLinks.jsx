@@ -17,7 +17,7 @@ function HeaderSocialLinks() {
             <a href="mailto:wabdeali@gmail.com"><img src={emailIcon} alt="email link" className={styles.icon} /></a>
             <a
                 className={styles.socialLinksButton}
-                href="https://drive.google.com/file/d/1N6mw3cSN44vskLBRbThRaqb5ptt7kZUc/view?usp=sharing"
+                href="https://drive.google.com/file/d/1L3FVvqBZE7nal5_kEnV7SJ5iwDZyyFpy/view?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
             >

@@ -3,6 +3,7 @@ import styles from '../../styles/Projects.module.scss'
 import ekjanScreenshot from '../../assets/imgs/ekjanScreenshot.png';
 import club88Screenshot from '../../assets/imgs/club88Screenshot.png';
 import safinaScreenshot from '../../assets/imgs/safinaScreenshot.png';
+import wapScreenshot from "../../assets/imgs/wapScreenshot.png"
 
 function Projects() {
     const projects = [
@@ -13,6 +14,14 @@ function Projects() {
             websiteURL: 'https://ekjanfountainsmap.netlify.app/',
             sourceCodeURL: 'https://github.com/wabdeali/ekjanfountainsmap',
             technologies: ['React', 'Firebase', 'Leaflet', 'Material UI']
+        },
+        {
+            title: "Webapp Pentration Testing Practice Suite",
+            body: "An intentionally vulnerable webapp that serves as a platform for beginners/hobbyists to learn basics of penetration testing easily.",
+            img: wapScreenshot,
+            websiteURL: "https://wapenetrationtesting.netlify.app/",
+            sourceCodeURL: "https://github.com/wabdeali/webapppentesting",
+            technologies: ["NextJS", "NodeJS", "Express", "PostgreSQL", "Sass"]
         },
         {
             title: 'Club88',
