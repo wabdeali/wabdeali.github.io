@@ -4,6 +4,7 @@ import ekjanScreenshot from '../../assets/imgs/ekjanScreenshot.png';
 import club88Screenshot from '../../assets/imgs/club88Screenshot.png';
 import safinaScreenshot from '../../assets/imgs/safinaScreenshot.png';
 import wapScreenshot from "../../assets/imgs/wapScreenshot.png"
+import typeracerScreenshot from "../../assets/imgs/typeracerScreenshot.jpeg"
 
 function Projects() {
     const projects = [
@@ -13,7 +14,8 @@ function Projects() {
             img: ekjanScreenshot,
             websiteURL: 'https://ekjanfountainsmap.netlify.app/',
             sourceCodeURL: 'https://github.com/wabdeali/ekjanfountainsmap',
-            technologies: ['React', 'Firebase', 'Leaflet', 'Material UI']
+            technologies: ['React', 'Firebase', 'Leaflet', 'Material UI'],
+            display: true
         },
         {
             title: "Webapp Pentration Testing Practice Suite",
@@ -21,7 +23,8 @@ function Projects() {
             img: wapScreenshot,
             websiteURL: "https://wapenetrationtesting.netlify.app/",
             sourceCodeURL: "https://github.com/wabdeali/webapppentesting",
-            technologies: ["NextJS", "NodeJS", "Express", "PostgreSQL", "Sass"]
+            technologies: ["NextJS", "NodeJS", "Express", "PostgreSQL", "Sass"],
+            display: true
         },
         {
             title: 'Club88',
@@ -29,14 +32,24 @@ function Projects() {
             img: club88Screenshot,
             websiteURL: 'https://club88.netlify.app/',
             sourceCodeURL: 'https://github.com/wabdeali/club88',
-            technologies: ['React', 'Firebase', '<model-viewer>', 'Router']
+            technologies: ['React', 'Firebase', '<model-viewer>', 'Router'],
+            display: true,
         },
         {
             title: 'Safina Newsletter',
             body: 'An archive of newsletters published by an organization that helps with analytics about all their readers.',
             img: safinaScreenshot,
             websiteURL: 'https://blrjmt.com/www/safina/',
-            technologies: ['React', 'Google Analytics', 'Sass']
+            technologies: ['React', 'Google Analytics', 'Sass'],
+            display: false,
+        },
+        {
+            title: 'Typeracer Clone',
+            body: 'A clone of the popular speed typing game play.typeracer.com. Multiple people can join the game and race together, achieved using websockets.',
+            img: typeracerScreenshot,
+            sourceCodeURL: 'https://github.com/wabdeali/typeracer-clone/',
+            technologies: ['React', 'NodeJS', 'SocketIO', 'Sass'],
+            display: true,
         }
     ]
 
@@ -46,7 +59,7 @@ function Projects() {
             <div className={styles.projectsContainer}>
                 {
                     projects.map(project =>
-                        <div className={styles.projectContainer}
+                        project.display && <div className={styles.projectContainer}
                             initial={{ opacity: 0, x: 50 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.8 }}
@@ -56,7 +69,7 @@ function Projects() {
                                 <h3 className={styles.projectInfoTitle}>{project.title}</h3>
                                 <p className={styles.projectInfoBody}>{project.body}</p>
                                 <div className={styles.projectInfoButtons}>
-                                    <a href={project.websiteURL} target="_blank" rel="noreferrer" className={styles.projectInfoButton}>Website</a>
+                                    {project.websiteURL && <a href={project.websiteURL} target="_blank" rel="noreferrer" className={styles.projectInfoButton}>Website</a>}
                                     {project.sourceCodeURL && <a href={project.sourceCodeURL} target="_blank" rel="noreferrer" className={styles.projectInfoButton}>Source Code</a>}
                                 </div>
                                 <hr />
