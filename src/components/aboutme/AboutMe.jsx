@@ -12,8 +12,8 @@ function AboutMe() {
                     <p className={styles.aboutmeBody}>I love creating things. Be it a website or a small tool, seeing something that I built in action, helping people or solving a problem gives me immense joy. My goal is to create products that are amazing both visually, and technically.</p>
                     <h3 className={styles.skillsTitle}>Some technologies I have been working with recently</h3>
                     <div className={styles.skillsContainer}>
-                        {skills.map(skill => (
-                            <span>{skill}</span>
+                        {skills.map((skill, index) => (
+                            <span key={index}>{skill}</span>
                         ))}
                     </div>
                     <h3 className={styles.skillsTitle}>Work Experience</h3>
